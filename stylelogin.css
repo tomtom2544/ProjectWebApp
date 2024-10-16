@@ -1,0 +1,91 @@
+/* จัดการพื้นหลังและองค์ประกอบทั้งหมดให้ตรงกลาง */
+body {
+    background-color: #282828; /* พื้นหลังสีเข้ม */
+    color: #e0e0e0; /* สีข้อความ */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* จัดเรียงองค์ประกอบในแนวตั้ง */
+}
+
+/* จัดการรูปแบบของหัวข้อ */
+h1 {
+    color:white; /* สีเขียวอ่อน */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* รูปแบบฟอร์ม */
+form {
+    background-color: #262626; /* สีพื้นหลังของฟอร์ม */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    display: flex;
+    flex-direction: column; /* จัดเนื้อหาให้อยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้เนื้อหาอยู่กึ่งกลางในแนวนอน */
+    justify-content: center; /* จัดให้เนื้อหาอยู่กึ่งกลางในแนวตั้ง */
+}
+
+/* ช่องกรอกข้อมูล */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white; /* เส้นขอบสีเขียว */
+    border-radius: 5px;
+    background-color: #1a1a1a; /* พื้นหลังสีเข้ม */
+    color: #e0e0e0; /* สีข้อความ */
+}
+
+/* ปุ่มเข้าสู่ระบบ */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #EFA3C7; /* ปุ่มสีเขียวเข้ม */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* จัดการข้อความข้อผิดพลาด */
+p.error {
+    color: #ff4d4d; /* ข้อความข้อผิดพลาดสีแดง */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* สีลิงก์ลงทะเบียน */
+p.register a {
+    color: #C6DA83; /* สีเขียวอ่อน */
+    text-decoration: none;
+}
+
+p.register a:hover {
+    text-decoration: underline;
+}
+
+/* สีลิงก์ลืมรหัสผ่าน */
+p.forgot-password a {
+    color: #ff8080; /* สีแดงอ่อน */
+    text-decoration: none;
+}
+
+p.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+/* จัดการฟอร์มทั้งหมดให้อยู่ตรงกลาง */
+form p {
+    color: #e0e0e0;
+}
